@@ -104,7 +104,7 @@ function appendPokemon(url, speed, defense, attack, hp, name){
 }
 
 var getData = function(character){
-  var $url = 'http://pokeapi.co/api/v2/pokemon/' +character;
+  var $url = 'https://pokeapi.co/api/v2/pokemon/' +character;
   console.log($url);
   $.ajax({
     url: $url,
