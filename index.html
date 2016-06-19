@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="./images/pokeball.png"/>
+  <title>Gotta Catch 'em All</title>
+
+  <!--Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <!--Google Fonts Ends-->
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./javascript/script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <div class="main">
+
+    <div class="top">
+      <input type="text" class="character" placeholder="Choose Pokemon">
+      <select name="option" class="options">
+        <option value="player1"> player1</option>
+        <option value="player2"> player2</option>
+      </select>
+      <button class="myChar">I Choose You</button>
+      <p>Please enter pokemon name or enter any random number less than 600. For numbers more than 600 Pokemon api may or may not support Image and you may end up fighting your opponent without image. Which is not nice.</p>
+    </div>
+
+    <div class="dashboard">
+      <p> <span class="battleStatus"> Active </span> </p>
+
+    <!-- Default attacking player1 not literally just for updating attack logic
+      First attack is decided by pokemon who has high speed.
+    -->
+
+      <div class="player" id="1">
+        Name: <input type="text" class="name1" value="">
+        <img src="" alt="" class="pokemon1">
+        <button class="attackButton" id="Player1Button"> kill 'em</button>
+        <div class="stat">
+          Speed: <input type="text" class="speed1" value="" class="speed">
+          Defense: <input type="text" class="defense1" value="" class="defense">
+          Attack: <input type="text" class="attack1" value="" class="attack">
+          HP: <input type="text" class="hp1" value="" class="hp">
+        </div>
+      </div>
+
+    <!--Default defending player2 -->
+      <div class="player" id="2">
+        Name: <input type="text" class="name2" value="">
+        <img src="" alt="" class="pokemon2">
+        <button class="attackButton" id="Player2Button"> kill 'em</button>
+        <div class="stat">
+          Speed: <input type="text" class="speed2" value="" class="speed">
+          Defense: <input type="text" class="defense2" value="" class="defense">
+          Attack: <input type="text" class="attack2" value="" class="attack">
+          HP: <input type="text" class="hp2" value="" class="hp">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close">X</span>
+        <p class="winner"> </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
+
